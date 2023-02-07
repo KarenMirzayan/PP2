@@ -1,2 +1,3 @@
-from random import randint
-print(randint(1, 2))
+from functs import ounce
+
+print(ounce(5))

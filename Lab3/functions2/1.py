@@ -75,8 +75,6 @@ movies = [
 "category": "Romance"
 }
 ]
-
-#1
 def score(movies, s):
     for i in movies:
         if s in i.values():

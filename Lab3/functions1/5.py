@@ -1,8 +1,9 @@
 from itertools import permutations
 def perm(s):
-    a = [].extend(s)
+    a = []
+    a.extend(s)
     b = permutations(a)
-    for i in list(b):
+    for i in set(b):
         for j in i:
             print(j, end = '')
         print()

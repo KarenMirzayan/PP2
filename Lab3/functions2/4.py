@@ -75,9 +75,12 @@ movies = [
 "category": "Romance"
 }
 ]
-def ave(s):
+def ave(movies, s):
     k = 0
     for i in s:
-        k += i['imdb']
-    print(k/len(s))
-ave(movies)
+        for j in movies:
+            if j["name"] == i:
+                k += j['imdb']
+    return k / len(s)
+    
+print(ave(movies, [i for i in input().split(', ')]))
