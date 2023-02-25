@@ -30,4 +30,4 @@ with open(r'C:\Users\k_mir\OneDrive\Рабочий стол\PP2\Lab5\data.csv', 
     writer = csv.writer(f)
     writer.writerows(result)
 
-file.close
+file.close()
