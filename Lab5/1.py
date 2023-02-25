@@ -18,7 +18,7 @@ print(BINValue)
 print(KassaValue)
 print()
 
-ItemPatternText = r"\n(?P<Order>.*)\n(?P<Name>.*)\n(?P<Count>.*)x(?P<Price>.*)\n(?P<Subtotal>.*)\nСтоимость\n(?P<Total>.*)\n"
+ItemPatternText = r"\n(?P<Order>.*)\n(?P<Name>.*)\n(?P<Count>.*)x(?P<Price>.*)\n(?P<Subtotal>.*)\nСтоимость\n(?P<Total>.*)"
 CompiledItemPattern = re.compile(ItemPatternText)
 items = re.finditer(CompiledItemPattern, text)
 for match in items:
