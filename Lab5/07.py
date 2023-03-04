@@ -1,5 +1,5 @@
 import re
 
 s = input()
-a = re.sub(r'(?:_)(.)', lambda x: x.group(1).upper(), s)
+a = re.sub(r'(_)(?P<A>.)', lambda x: x.group("A").upper(), s)
 print(a)

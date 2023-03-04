@@ -1,4 +1,7 @@
 import re
+
 s = input()
-x = re.findall(r"ab*", s)
-print(x)
+if re.search(r"ab*", s):
+    print(True)
+else:
+    print(False)
