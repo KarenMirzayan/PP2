@@ -41,8 +41,8 @@ while running:
 
     clock_display = font.render("{:02d}:{:02d}".format(min, sec), True, (0, 0, 0))
 
-    angle_sec = sec * 6 + 3
-    angle_min = min * 6 + (angle_sec - 3) / 60
+    angle_sec = sec * 6 + 4
+    angle_min = min * 6 + (angle_sec - 4) / 60
 
     sec_h1, rect_sec = rot_center(sec_h, angle_sec, 400, 300)
     min_h1, rect_min = rot_center(min_h, angle_min, 400, 300)
@@ -52,6 +52,6 @@ while running:
     screen.blit(clock_display, (0, 0))
     pygame.display.flip()
     clock.tick(60)
-
+pygame.quit()
     
     
